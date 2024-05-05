@@ -1,12 +1,10 @@
-local ESX = nil
 local QBCore = nil
 
-if Config.UseESX then
-    print("vehicletrackers: ^2Using ESX")
-    ESX = exports['es_extended']:getSharedObject()
-else
+if not Config.UseOxLib then
     print("vehicletrackers: ^2Using QB")
     QBCore = exports['qb-core']:GetCoreObject()
+else
+    print("vehicletrackers: ^2Using OX")
 end
 
 local trackerCooldown = false

@@ -1,4 +1,3 @@
-local ESX = nil
 local QBCore = nil
 
 local trackerPairItemName = 'cw_tracking_pair'
