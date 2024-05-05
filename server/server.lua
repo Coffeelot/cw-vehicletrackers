@@ -164,7 +164,7 @@ if Config.Inventory == 'qb' then
         useTrackerPair(source, item.info)
     end)
     QBCore.Functions.CreateUseableItem(trackerItemName, function(source, item)
-        useTrackerPair(source, item.info)
+        useTracker(source, item.info)
     end)
     QBCore.Functions.CreateUseableItem(receiverItemName, function(source, item)
         useReceiver(source, item.info)
