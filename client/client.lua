@@ -320,7 +320,7 @@ else
                     if not Entity(entity).state.trackerIsKnown then return true end
                     return false
                 end,
-                onSelect = function(data)
+                action = function(data)
                     scanNearestVehicle()
                 end
             }
@@ -337,7 +337,7 @@ else
                     if Entity(entity).state.tracker and Entity(entity).state.trackerIsKnown then return true end
                     return false
                 end,
-                onSelect = function(data)
+                action = function(data)
                     removeTracker()
                 end
             }
